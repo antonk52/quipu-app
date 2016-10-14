@@ -25,8 +25,9 @@
 }
 
 #main-header svg {
-  .ice-cream {
-    fill: #eee;
+  .ice-cream,
+  .wordmark {
+    fill: $base-color-light;
   }
   .pro-label {
     display: none;
