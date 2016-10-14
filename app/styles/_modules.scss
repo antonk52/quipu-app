@@ -1,0 +1,30 @@
+@import "text";
+
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+.index-hero {
+  position: relative;
+  min-height: calc(100vh - 100px;);
+  background: #C8C8C8;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url(https://images.unsplash.com/photo-1416348316427-9ebac5dfef01?dpr=1&auto=format&crop=entropy&fit=crop&w=1199&h=803&q=80&cs=tinysrgb) center center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  color: $base-color-light;
+}
+
+@media only screen and (max-width: 767px) {
+  .index-hero {
+    text-align: justify;
+  }
+}
+
+#main-footer {
+  background: $base-color-green;
+  min-height: 50px;
+  padding: 20px 0;
+}
+

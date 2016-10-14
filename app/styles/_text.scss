@@ -1,0 +1,11 @@
+.text-large {
+  font-size: 2em;
+}
+
+.text-small {
+  font-size: 0.8em;
+}
+
+.text-muted-dark {
+  color: darken($base-color-dark, .1);
+}

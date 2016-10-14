@@ -1,0 +1,33 @@
+#main-header {
+  background: $base-color-green;
+}
+
+#main-header > .container {
+  min-height: 100px;
+  display: flex;
+  flex-wrap:  wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  &:after {
+    content: none;
+  }
+}
+
+#main-header #main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  li {
+    display: inline-block;
+    padding: 1em;
+  }
+  a {
+    color: $base-color-dark;
+    text-decoration: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+
+}
