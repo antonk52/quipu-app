@@ -6,6 +6,20 @@
   font-size: 0.8em;
 }
 
+.text-dark {
+  color: $base-color-dark;
+}
+
+.text-light {
+  color: $base-color-light;
+}
+
 .text-muted-dark {
   color: darken($base-color-dark, .1);
+}
+
+@media only screen and (max-width: 575px){
+  .text-large {
+    font-size: 1.5em;
+  }
 }

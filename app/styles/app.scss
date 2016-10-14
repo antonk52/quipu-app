@@ -1,2 +1,8 @@
 @import "bower_components/normalize.sass/normalize.sass";
 
+// SMACSS
+@import "variables";
+@import "base";
+@import "layout";
+@import "modules";
+@import "state";

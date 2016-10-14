@@ -4,10 +4,6 @@
 
 #main-header > .container {
   min-height: 100px;
-  display: flex;
-  flex-wrap:  wrap;
-  justify-content: space-between;
-  align-items: center;
   height: 100%;
   &:after {
     content: none;
@@ -23,11 +19,27 @@
     padding: 1em;
   }
   a {
-    color: $base-color-dark;
+    color: $base-color-light;
     text-decoration: none;
   }
 }
 
-@media only screen and (max-width: 767px) {
+#main-header svg {
+  .ice-cream {
+    fill: #eee;
+  }
+  .pro-label {
+    display: none;
+  }
+}
 
+@media only screen and (max-width: 575px) {
+  #main-header > .container > * {
+    display: block;
+    margin: auto;
+  }
+
+  #main-header #main-header-logo {
+    margin-top: 15px;
+  }
 }
