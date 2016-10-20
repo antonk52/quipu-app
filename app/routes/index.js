@@ -1,7 +1,11 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model: function(){
-    console.log('this is the index model log');
+  model(){
+    return Ember.RSVP.hash({
+      menu: $.get('/api/menu'),
+      products: $.get('/api/products')
+    })
+
   }
 });
