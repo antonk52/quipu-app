@@ -1,7 +1,12 @@
 {{yield}}
 <div class="container">
   <h3>Product list</h3>
+  <div class="row">
   {{#each products as |product|}}
-  <p>{{product.title}} for {{product.price}}€</p>
+    <div class="col-sm-6 col-lg-4 mb-20">
+      <img src="http://placehold.it/500x300" alt="" class="img-responsive">
+      <center>{{product.title}} for <span class="price">{{product.price}}€</span></center>
+    </div>
   {{/each}}
+  </div>
 </div>

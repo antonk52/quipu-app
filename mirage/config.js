@@ -36,8 +36,8 @@ export default function() {
   this.get('/products', () => {
       return [
           { title: 'One product', price: '10.99'},
-          { title: 'another one', price: '14.99'},
-          { title: 'third one', price: '24.99'},
+          { title: 'Another one', price: '14.99'},
+          { title: 'Third one', price: '24.99'},
         ];
     });
 }

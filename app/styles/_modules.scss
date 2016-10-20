@@ -51,6 +51,21 @@
   }
 }
 
+span.price {
+  color: $base-color-green;
+  font-weight: bold;
+  text-align: right;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.img-responsive {
+  max-width: 100%;
+  margin: auto;
+}
+
 #main-footer {
   background: $base-color-green;
   min-height: 50px;
