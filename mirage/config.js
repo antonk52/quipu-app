@@ -26,18 +26,27 @@ export default function() {
 
   this.get('/menu', () => {
       return [
-          { title: 'Pricing plans', href: '#'},
-          { title: 'Blog', href: '#'},
-          { title: 'More', href: '#'},
-          { title: 'Sign In', href: '#'}
+          { title: 'Home', href: '/'},
+          { title: 'User', href: '/user'},
+          { title: 'Administration', href: '/admin'}
         ];
     });
 
   this.get('/products', () => {
       return [
-          { title: 'One product', price: '10.99'},
-          { title: 'Another one', price: '14.99'},
-          { title: 'Third one', price: '24.99'},
+          { title: 'Basic', price: '9.99'},
+          { title: 'A little better', price: '14.99'},
+          { title: 'Pretty cool one', price: '24.99'},
+          { title: 'Best one', price: '49.99'}
         ];
+    });
+
+  this.get('/user', () => {
+      return {
+        name: 'John',
+        surname: 'Doe',
+        email: 'john@world.com',
+        purchased: [ 0, 3 ]
+      };
     });
 }
