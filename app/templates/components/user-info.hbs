@@ -1,20 +1,10 @@
 {{yield}}
 <div class="container">
   <h1>Welcome back <strong>{{user.name}} {{user.surname}}</strong></h1>
-  {{#each user.purchased as |pitem|}}
-    <h3>Product id is {{pitem}}</h3>
-    {{!--
-    ran into issue truing to iterate an array
-    by using each iteration value as key
-    to extract an object from products array
-    <p>{{products.[3].title}}</p>       works
-    <p>{{products.[pitem].title}}</p>   doesn't work
-    <p>{{products.pitem.title}}</p>     doesn't work
-    <p>{{products[pitem].title}}</p>    doesn't work
-    creating a custom helper also didn't help
-    --}}
-    <p>Product name here {{products.pitem.title}}</p>
-    <p>Product price here</p>
+  {{#each user.purchased as |index|}}
+       <p>Product name is <strong>{{get-product-at index products 'title'}}</strong></p>
+       <p>Product price is {{get-product-at index products 'price'}}</p>
+       <hr>
   {{/each}}
-  <p>total spent is VALUE</p>
+  <p>total spent is {{total-spent-by-user products user.purchased}}</p>
 </div>
