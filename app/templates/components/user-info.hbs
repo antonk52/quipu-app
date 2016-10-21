@@ -1,6 +1,7 @@
 {{yield}}
 <div class="container">
   <h1>Welcome back <strong>{{user.name}} {{user.surname}}</strong></h1>
+  <p>You email is {{output-email user.email}}</p>
   {{#each user.purchased as |index|}}
        <p>Product name is <strong>{{get-product-at index products 'title'}}</strong></p>
        <p>Product price is {{get-product-at index products 'price'}}</p>
