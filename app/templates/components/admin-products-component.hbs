@@ -1,0 +1,7 @@
+{{yield}}
+<h2>Products</h2>
+<ul>
+{{#each products as |product|}}
+  <li>{{product.title}} <span class="text-muted">{{product.price}}</span></li>
+{{/each}}
+</ul>

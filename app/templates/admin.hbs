@@ -1,0 +1,14 @@
+{{outlet}}
+{{header-component items=model.menu}}
+<center>
+  <h1>Admin Overview</h1>
+</center>
+<div class="container">
+  <div class="col-md-6">
+    {{admin-users-component user=model.user products=model.products}}
+  </div>
+  <div class="col-md-6">
+    {{admin-products-component products=model.products}}
+  </div>
+</div>
+{{footer-component}}
